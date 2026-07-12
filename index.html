@@ -4,60 +4,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+
+    <title>Alok Singh | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Alok Singh</h1>
-    <h4><big>Web Developer</big></h4>
-    <p><big>Address</big></p>
-    <p>Kariteen, Kaptanganj, Kushinagar, Uttar Pradesh, India</p>
-    <p><big>Contact Number</big></p>
-    <p>8707334989</p>
-    <p><big>Mail</big></p>
-    <p>aaloksingh7755@gmail.com</p>
+    <div class="progress-line"></div>
 
-    <hr>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Alok<span>.</span></div>
 
-    <h2>Skills</h2>
+            <ul class="nav-links">
+                <div class="menu-toggle" id="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <ul>
-        <li>Web Development</li>
-        <li>Proficiency in html</li>
-        <li>Data Structures and Algorithms</li>
-        <li>Database Management</li>
-        <li>Testing and Debugging</li>
-        <li>Problem-Solving</li>
-        <li>Object-Oriented Programming</li>
-        <li>Communication</li>
-        <li>Graphic designing</li>
-    </ul>
-    <hr>
-    <h2>Experience</h2>
+            <button id="theme-toggle" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+    </header>
 
-    <h4>Fresher</h4>
+    <!-- Hero -->
+    <section id="home" class="hero reveal">
+        <div class="hero-content">
+            <p class="greeting">👋 Hello, I'm</p>
+            <h1>Alok Singh</h1>
+            <h2>I am a <span class="typing"></span></h2>
+            <p class="description">
+                I create modern, responsive and user-friendly websites using
+                HTML, CSS and JavaScript. Passionate about designing beautiful
+                web experiences and continuously learning new technologies.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn primary-btn">Hire Me</a>
+               <a href="files/resume.pdf" target="_blank" download="Alok_Singh_CV.pdf" class="btn secondary-btn">Download CV</a>
+            </div>
+        </div>
 
-    <p>"Web developer with hands-on experience in HTML, CSS, JavaScript, and React. I love building clean, responsive websites and solving tricky coding problems. Currently looking for a part-time or flexible web development role where I can contribute to real projects while managing my studies and growing my skills."</p>
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Alok Singh">
+        </div>
+    </section>
 
-    <hr>
+    <!-- About -->
+    <section id="about" class="about" data-aos="fade-up">
+        <div class="about-image">
+            <img src="images/profile.jpg" alt="About Image">
+        </div>
 
-    <h2>Education</h2>
+        <div class="about-content">
+            <h4>About Me</h4>
+            <h2>Who Am I?</h2>
+            <p>
+                Hello! I'm <strong>Alok Singh</strong>, a passionate Frontend Web Developer
+                who enjoys creating beautiful, responsive and user-friendly websites.
+                I love learning new technologies and solving real-world problems through coding.
+            </p>
 
-    <h4><big>Intermediate</big></h4>
-    <p><b>Persuing</b></p>
+            <div class="about-info">
+                <div class="info-box">
+                    <h3>Education</h3>
+                    <p>Intermediate (Pursuing)</p>
+                </div>
+                <div class="info-box">
+                    <h3>Experience</h3>
+                    <p>Fresher</p>
+                </div>
+                <div class="info-box">
+                    <h3>Location</h3>
+                    <p>Kaptnganj, Kushinagar, Uttar Pradesh, India</p>
+                </div>
+                <div class="info-box">
+                    <h3>Email</h3>
+                    <p>aaloksingh7755@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <h4><big>High School(CBSE)</big></h4>
+    <!-- Skills -->
+    <section id="skills" class="skills" data-aos="fade-up">
+        <div class="section-title">
+            <h4>My Skills</h4>
+            <h2>What I Know</h2>
+        </div>
 
-    <p><b>75%</b></p>
-    <hr>
-    <h2>Personal detail</h2>
-    <p><b>Date of Birth:</b> 12/10/2008 </p>
-    <p><b>Nationality:</b> Indian</p>
-    <p><b>Maritial Status:</b> Single</p>
-    <p><b>Gender:</b> Male</p>
-    <p><b>Religon:</b> Hindu</p>
+        <div class="skills-container">
+            <div class="skill">
+                <div class="skill-info"><span>HTML</span><span>95%</span></div>
+                <div class="progress-bar"><div class="progress html"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-info"><span>CSS</span><span>90%</span></div>
+                <div class="progress-bar"><div class="progress css"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-info"><span>JavaScript</span><span>80%</span></div>
+                <div class="progress-bar"><div class="progress js"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-info"><span>React</span><span>70%</span></div>
+                <div class="progress-bar"><div class="progress react"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-info"><span>Graphic Design</span><span>85%</span></div>
+                <div class="progress-bar"><div class="progress graphic"></div></div>
+            </div>
+            <div class="skill">
+                <div class="skill-info"><span>Database</span><span>75%</span></div>
+                <div class="progress-bar"><div class="progress database"></div></div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Projects -->
+    <section id="projects" class="projects" data-aos="zoom-in">
+        <div class="section-title">
+            <h4>My Work</h4>
+            <h2>Featured Projects</h2>
+        </div>
+
+        <div class="project-container">
+            <div class="project-card">
+                <img src="images/project1.jpg" alt="Portfolio Website">
+                <div class="project-content">
+                    <h3>Personal Portfolio</h3>
+                    <p>Modern responsive portfolio website built using HTML, CSS and JavaScript.</p>
+                    <div class="project-buttons">
+                        <a href=" https://alokweb-dev.github.io/Resume/">Live Demo</a>
+                        <a href="https://github.com/AlokWeb-dev/Resume.git">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card reveal">
+                <img src="images/project2.jpg" alt="Quiz Website">
+                <div class="project-content">
+                    <h3>Quiz Website</h3>
+                    <p>Interactive quiz website with real-time scoring and responsive user experience.</p>
+                    <div class="project-buttons">
+                        <a href="#">Live Demo</a>
+                        <a href="https://github.com/AlokWeb-dev/Quiz-Website.git">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="images/project3.jpg" alt="Calculator Web App">
+                <div class="project-content">
+                    <h3>Calculator Web App</h3>
+                    <p>Fully functional calculator web app with a retro LCD-style display, built using HTML, CSS and JavaScript.</p>
+                    <div class="project-buttons">
+                        <a href=" https://alokweb-dev.github.io/Calculator-Web./">Live Demo</a>
+                        <a href="https://github.com/AlokWeb-dev/Calculator-Web..git">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services" data-aos="fade-left">
+        <div class="section-title">
+            <h4>My Services</h4>
+            <h2>What I Can Do</h2>
+        </div>
+
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Responsive and modern websites using HTML, CSS and JavaScript.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-palette"></i>
+                <h3>UI / UX Design</h3>
+                <p>Clean, attractive and user-friendly interface designs.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Responsive Design</h3>
+                <p>Websites optimized for desktop, tablet and mobile devices.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Performance</h3>
+                <p>Fast loading websites with optimized performance.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>SEO Friendly</h3>
+                <p>Proper HTML structure and search engine optimized pages.</p>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>Website Maintenance</h3>
+                <p>Bug fixing, updates and continuous website improvements.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume" class="resume" data-aos="fade-right">
+        <div class="section-title">
+            <h4>My Journey</h4>
+            <h2>Education & Experience</h2>
+        </div>
+
+        <div class="resume-container">
+            <div class="resume-column">
+                <h3 class="resume-heading">Education</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2025 - Present</span>
+                        <h4>Intermediate</h4>
+                        <p>Pursuing Intermediate from Uttar Pradesh.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">2024</span>
+                        <h4>High School (CBSE)</h4>
+                        <p>Completed High School with 75% marks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resume-column">
+                <h3 class="resume-heading">Experience</h3>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <span class="year">2025 - Present</span>
+                        <h4>Frontend Developer</h4>
+                        <p>Building responsive websites using HTML, CSS and JavaScript.</p>
+                    </div>
+                    <div class="timeline-item">
+                        <span class="year">Projects</span>
+                        <h4>Personal Projects</h4>
+                        <p>Portfolio Website, Quiz Website and Calculator web app</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" data-aos="fade-up">
+        <div class="section-title">
+            <h4>Contact Me</h4>
+            <h2>Let's Work Together</h2>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <h3>Location</h3>
+                        <p>Kaptnganj, Kushinagar, Uttar Pradesh, India</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>aaloksingh7755@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>8707334989</p>
+                    </div>
+                </div>
+            </div>
+
+           <form class="contact-form" id="contact-form" action="https://formspree.io/f/meeyjdew" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="subject" placeholder="Subject" required>
+    <textarea rows="6" name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <p class="form-status" id="form-status"></p>
+</form>
+        </div>
+    </section>
+
+    <button id="topBtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <footer>
+        <div class="footer-content">
+            <h2>Alok Singh</h2>
+            <p>Thanks for visiting my portfolio. Let's build something amazing together.</p>
+
+            <div class="social-icons">
+                <a href="https://github.com/AlokWeb-dev"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/its_alok_singh007/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="mailto:aaloksingh7755@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+
+            <hr>
+            <p>© 2026 Alok Singh | Designed & Developed with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+    <script src="script.js"></script>
 </body>
-
 </html>
